@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سادات هایبرید ورکشاپ</title>
+  <meta name="description" content="سادات هایبرید ورکشاپ - خدمات تخصصی موترهای هایبرید، احیای بطری، بلانس، بریک و ABS، وایرنگ، مستری‌گری و چک کمپیوتر در کابل" />
+  <style>
+    :root{
+      --bg:#08111f; --card:#ffffff; --text:#0f172a; --muted:#475569; --line:#dbe4f0;
+      --blue:#0b4aa8; --green:#16a34a; --orange:#ff5a2a; --shadow:0 12px 30px rgba(2,12,27,.12); --radius:22px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f4f7fb;color:var(--text);line-height:1.9}
+    img{max-width:100%;display:block} a{text-decoration:none;color:inherit}
+    .container{width:min(1180px, calc(100% - 28px)); margin:auto}
+    .topbar{position:sticky;top:0;z-index:99;background:rgba(8,17,31,.96);color:#fff;box-shadow:0 10px 24px rgba(0,0,0,.12)}
+    .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:58px;height:58px;object-fit:contain;background:#fff;border-radius:14px;padding:6px}
+    .brand strong{display:block;font-size:1.08rem}.brand span{display:block;font-size:.84rem;color:#cbd5e1}
+    .nav{display:flex;gap:16px;flex-wrap:wrap;color:#e2e8f0;font-size:.95rem}
+    .nav a{padding:6px 10px;border-radius:10px}.nav a:hover{background:rgba(255,255,255,.08)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:14px;font-weight:700;border:none;transition:.2s ease;cursor:pointer}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-orange{background:var(--orange);color:#fff}.btn-green{background:var(--green);color:#fff}.btn-blue{background:var(--blue);color:#fff}.btn-light{background:#fff;color:#08111f}
+    .hero{background:linear-gradient(135deg, #08111f 0%, #0b4aa8 55%, #0b6a59 100%);color:#fff;padding:46px 0 34px}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:24px;align-items:center}
+    .badge{display:inline-block;background:rgba(255,255,255,.12);color:#fff;padding:8px 14px;border-radius:999px;font-size:.9rem;margin-bottom:12px}
+    h1{font-size:clamp(2rem,4.4vw,3.8rem);line-height:1.2;margin:.15em 0 .3em}
+    .lead{font-size:1.04rem;color:#e2e8f0;margin:0 0 18px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 20px}
+    .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .fact{background:rgba(255,255,255,.1);border-radius:18px;padding:14px;text-align:center;border:1px solid rgba(255,255,255,.12)}
+    .fact strong{display:block;font-size:1.2rem}
+    .hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:16px;box-shadow:0 18px 40px rgba(0,0,0,.14)}
+    .hero-card img{width:100%;max-height:500px;object-fit:cover;border-radius:18px}
+    .section{padding:58px 0}.section-title{text-align:center;margin-bottom:26px}
+    .section-title h2{margin:0 0 6px;font-size:2rem}.section-title p{margin:0;color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+    .card h3{margin:0 0 10px;color:var(--blue);font-size:1.08rem}.card p{margin:0;color:var(--muted)}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+    .list{list-style:none;margin:0;padding:0}
+    .list li{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 14px;margin-bottom:10px;box-shadow:var(--shadow)}
+    .banner{background:linear-gradient(135deg,#08111f,#123f88);color:#fff;border-radius:28px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center;box-shadow:var(--shadow)}
+    .banner img{border-radius:22px;width:100%;max-height:380px;object-fit:cover}
+    .symptoms{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    figure.photo{margin:0;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+    .photo img{width:100%;height:250px;object-fit:cover;background:#e5edf8}.photo figcaption{padding:12px 14px;font-size:.92rem;color:var(--muted)}
+    .contact{background:#08111f;color:#fff;border-radius:28px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:22px;box-shadow:var(--shadow)}
+    .contact-item{background:rgba(255,255,255,.08);border-radius:16px;padding:14px 16px;margin-bottom:12px;border:1px solid rgba(255,255,255,.08)}
+    .contact-item strong{display:block;color:#bfdbfe;margin-bottom:4px}
+    .footer{padding:24px 0 36px;text-align:center;color:#64748b}
+    .upload-note{background:#fff7ed;color:#9a3412;border:1px solid #fed7aa;padding:14px 16px;border-radius:16px;margin-top:16px;font-size:.94rem}
+    @media (max-width:1024px){.cards{grid-template-columns:repeat(2,1fr)}.photo-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:820px){.hero-grid,.split,.banner,.contact,.symptoms{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.topbar .inner,.brand,.nav,.actions{justify-content:center}.hero{text-align:center}}
+    @media (max-width:620px){.cards,.photo-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container inner">
+    <div class="brand">
+      <img src="logo.png" alt="لوگوی سادات هایبرید ورکشاپ">
+      <div>
+        <strong>سادات هایبرید ورکشاپ</strong>
+        <span>مرکز تخصصی موترهای هایبرید و مدل بالا</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#services">خدمات</a>
+      <a href="#hybrid">احیای بطری</a>
+      <a href="#beforeafter">قبل و بعد</a>
+      <a href="#gallery">گالری</a>
+      <a href="#contact">تماس</a>
+    </nav>
+    <a class="btn btn-green" href="https://wa.me/93780409818" target="_blank" rel="noopener">واتساپ</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">خدمات مسلکی و باکیفیت در کابل</span>
+      <h1>سادات هایبرید ورکشاپ</h1>
+      <p class="lead">ترمیم تخصصی موترهای هایبرید و مدل بالا، احیای بطری، بلانس بطری، بریک و ABS، وایرنگ، مستری‌گری، کوپی‌کشی، سرویس مکمل و چک کامپیوتری با دستگاه‌های جدید.</p>
+      <div class="actions">
+        <a class="btn btn-orange" href="tel:+93780409818">تماس مستقیم</a>
+        <a class="btn btn-green" href="https://wa.me/93780409818" target="_blank" rel="noopener">پیام واتساپ</a>
+        <a class="btn btn-blue" href="https://share.google/g7giSHdHuQtyXfwjR" target="_blank" rel="noopener">گوگل مپ</a>
+      </div>
+      <div class="facts">
+        <div class="fact"><strong>0780409818</strong> تماس و واتساپ</div>
+        <div class="fact"><strong>۸ صبح</strong> الی شام</div>
+        <div class="fact"><strong>کابل</strong> سرک چهل متره میدان هوایی</div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="hero-workshop.jpg" alt="تصویر نمای سادات هایبرید ورکشاپ">
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>بخش‌های کاری ما</h2>
+      <p>تمام خدمات مهم ورکشاپ در یک جا</p>
+    </div>
+    <div class="cards">
+      <div class="card"><h3>🔋 احیا و ترمیم بطری هایبرید</h3><p>احیای بطری، تست، عیب‌یابی، تقویت سلول‌ها، ریکندیشن و آماده‌سازی بطری قبل از تعویض.</p></div>
+      <div class="card"><h3>⚖️ بلانس بطری هایبرید</h3><p>بلانس دقیق بطری برای ولتاژ برابر، قدرت بیشتر، مصرف کمتر و عملکرد بهتر موتر.</p></div>
+      <div class="card"><h3>⚙️ مستری‌گری عمومی و تخصصی</h3><p>خدمات مستری‌گری برای موترهای عادی و هایبرید با بررسی دقیق و کار اصولی.</p></div>
+      <div class="card"><h3>🔌 وایرنگ‌کاری و سیستم برقی</h3><p>تشخیص و ترمیم مشکلات برق، سنسرها، سیم‌کشی، اتصالات و سیستم‌های الکترونیکی موتر.</p></div>
+      <div class="card"><h3>🧰 کوپی‌کشی و قلفک‌سازی</h3><p>خدمات کوپی‌کشی و قلفک‌سازی برای موترها با دقت و ابزار مناسب.</p></div>
+      <div class="card"><h3>🛞 ترمیم بریک و ABS</h3><p>ترمیم و سرویس سیستم بریک و ABS برای افزایش مصونیت و جلوگیری از خرابی‌های خطرناک.</p></div>
+      <div class="card"><h3>🧯 سرویس مکمل</h3><p>تعویض و چک موبلایل، فیلتر، روغن بریک و دیگر موارد مهم سرویس دوره‌ای.</p></div>
+      <div class="card"><h3>💻 چک کمپیوتر و سکینر</h3><p>چک کامپیوتری با دستگاه‌های سکینر جدید برای پیدا کردن خطاها و عیب‌یابی سریع.</p></div>
+      <div class="card"><h3>🚗 خدمات موترهای مدل بالا</h3><p>خدمات تخصصی برای موترهای هایبرید و مدل بالا با تجربه عملی و ابزار پیشرفته.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="hybrid" class="section" style="background:linear-gradient(180deg,#eef4ff,#f8fbff);">
+  <div class="container">
+    <div class="banner">
+      <div>
+        <h2 style="margin-top:0;color:#fff;">احیای بطری هایبرید قبل از تعویض</h2>
+        <p style="color:#dbeafe;">در بسیاری موارد بطری ضعیف قبل از تعویض قابل احیا، بلانس و تقویت است. این کار می‌تواند ظرفیت را بهتر کند، چارج و دِسچارج را متوازن‌تر سازد و مصرف را کمتر نماید.</p>
+        <div class="actions" style="margin-bottom:0;">
+          <a class="btn btn-orange" href="tel:+93780409818">برای مشاوره تماس بگیرید</a>
+          <a class="btn btn-light" href="https://wa.me/93780409818" target="_blank">ارسال عکس در واتساپ</a>
+        </div>
+      </div>
+      <img src="battery-main.jpg" alt="احیای بطری هایبرید">
+    </div>
+    <div class="symptoms" style="margin-top:22px;">
+      <div class="card">
+        <h3>نشانه‌های ضعیف شدن بطری هایبرید</h3>
+        <ul class="list">
+          <li>زود خالی و زود پُر شدن بطری</li>
+          <li>مصرف تیل زیادتر شدن</li>
+          <li>کم شدن قدرت موتر</li>
+          <li>روشن شدن چراغ Hybrid یا Weak Battery</li>
+          <li>اختلاف ولتاژ بلاک‌ها</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>فایده‌های احیا و بلانس بطری</h3>
+        <ul class="list">
+          <li>برگشت بهتر ظرفیت بطری</li>
+          <li>چارج و دِسچارج بهتر</li>
+          <li>مصرف کمتر</li>
+          <li>قدرت بهتر موتر</li>
+          <li>عمر بیشتر بطری</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="beforeafter" class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>قبل و بعد از سرویس و پاک‌کاری</h2>
+      <p>نمونه‌هایی از کارهای انجام‌شده در ورکشاپ</p>
+    </div>
+    <div class="photo-grid">
+      <figure class="photo"><img src="before-after1.jpg" alt="قبل و بعد از پاک‌کاری"><figcaption>نمونه قبل و بعد از پاک‌کاری</figcaption></figure>
+      <figure class="photo"><img src="before-after2.jpg" alt="سرویس منیفولد"><figcaption>قبل و بعد از سرویس و پاک‌کاری منیفولد</figcaption></figure>
+      <figure class="photo"><img src="brake-fluid.jpg" alt="روغن بریک و ABS"><figcaption>تعویض به‌موقع روغن بریک برای محافظت از ABS</figcaption></figure>
+      <figure class="photo"><img src="injector.jpg" alt="فارسنگ"><figcaption>نمونه مشکل ایجادشده از فارسنگ</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:linear-gradient(180deg,#eff6ff,#f8fafc);">
+  <div class="container split">
+    <div class="card">
+      <h3>چرا سادات هایبرید ورکشاپ؟</h3>
+      <ul class="list">
+        <li>✓ تخصص ویژه در موترهای هایبرید و مدل بالا</li>
+        <li>✓ احیا، بلانس و ترمیم بطری با تجربه عملی</li>
+        <li>✓ چک کامپیوتری با تجهیزات جدید</li>
+        <li>✓ خدمات متنوع در یک مکان</li>
+        <li>✓ آدرس مشخص و دسترسی آسان</li>
+        <li>✓ پاسخگویی سریع در واتساپ و تماس</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>درباره ما</h3>
+      <p>سادات هایبرید ورکشاپ مرکز تخصصی موترهای هایبرید و مدل بالا در کابل است. ما با استفاده از تجربه کاری، وسایل و ماشین‌آلات جدید، خدمات باکیفیت در بخش‌های احیای بطری، بلانس، ترمیم، عیب‌یابی، مستری‌گری، بریک و ABS، وایرنگ و سرویس مکمل ارائه می‌کنیم.</p>
+      <div class="upload-note">
+        این فایل طوری آماده شده که همه عکس‌های شما استفاده شوند، اما چون من به فایل‌های تصویری داخل GitHub شما دسترسی مستقیم ندارم، باید عکس‌ها را با همین نام‌ها کنار index.html آپلود کنید.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>گالری تصاویر و نمونه کارها</h2>
+      <p>عکس‌های ورکشاپ، تابلو، بطری هایبرید، خدمات و محیط کاری</p>
+    </div>
+    <div class="photo-grid">
+      <figure class="photo"><img src="gallery1.jpg" alt=""><figcaption>بطری‌های هایبرید و خدمات ورکشاپ</figcaption></figure>
+      <figure class="photo"><img src="gallery2.jpg" alt=""><figcaption>تابلو و ورودی ورکشاپ</figcaption></figure>
+      <figure class="photo"><img src="gallery3.jpg" alt=""><figcaption>احیای بطری هایبرید</figcaption></figure>
+      <figure class="photo"><img src="gallery4.jpg" alt=""><figcaption>نشانه‌های ضعیف شدن بطری</figcaption></figure>
+      <figure class="photo"><img src="gallery5.jpg" alt=""><figcaption>احیا ضروری است یا نه؟</figcaption></figure>
+      <figure class="photo"><img src="gallery6.jpg" alt=""><figcaption>خدمات مدل بالا و هایبرید</figcaption></figure>
+      <figure class="photo"><img src="gallery7.jpg" alt=""><figcaption>نمای عمومی ورکشاپ</figcaption></figure>
+      <figure class="photo"><img src="gallery8.jpg" alt=""><figcaption>داخل ورکشاپ و موترها</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:linear-gradient(180deg,#eef4ff,#f8fbff);">
+  <div class="container">
+    <div class="section-title">
+      <h2>سوالات متداول</h2>
+      <p>چند سوالی که مشتریان بیشتر می‌پرسند</p>
+    </div>
+    <div class="cards">
+      <div class="card"><h3>آیا بطری هایبرید همیشه باید تعویض شود؟</h3><p>خیر. در بعضی موارد بطری قابل احیا، بلانس و ترمیم است و نیاز به تعویض کامل ندارد.</p></div>
+      <div class="card"><h3>از کجا بفهمیم بطری ضعیف شده؟</h3><p>روشن شدن چراغ خطا، کم شدن قدرت موتر، مصرف زیاد، و اختلاف ولتاژ از نشانه‌های مهم است.</p></div>
+      <div class="card"><h3>آیا فقط هایبرید کار می‌کنید؟</h3><p>نه. خدمات مستری‌گری، بریک، ABS، وایرنگ، کوپی‌کشی و سرویس دیگر موترها را نیز انجام می‌دهیم.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container contact">
+    <div>
+      <h2 style="margin-top:0;color:#fff;">تماس با ما</h2>
+      <p style="color:#dbeafe;">برای مشاوره، نوبت، قیمت، احیای بطری، بلانس و دیگر خدمات با ما در تماس باشید.</p>
+      <div class="actions">
+        <a class="btn btn-orange" href="tel:+93780409818">تماس مستقیم</a>
+        <a class="btn btn-green" href="https://wa.me/93780409818" target="_blank">واتساپ</a>
+        <a class="btn btn-light" href="https://share.google/g7giSHdHuQtyXfwjR" target="_blank">باز کردن در گوگل مپ</a>
+      </div>
+    </div>
+    <div>
+      <div class="contact-item"><strong>شماره تماس و واتساپ</strong>0780409818</div>
+      <div class="contact-item"><strong>آدرس</strong>سرک چهل متره میدان هوایی مقابل وزارت داخله پهلوی موترشویی سلام، کابل، افغانستان</div>
+      <div class="contact-item"><strong>اوقات کاری</strong>از ۸ صبح الی شام</div>
+      <div class="contact-item"><strong>موقعیت</strong>لینک گوگل مپ برای پیدا کردن آسان آدرس ورکشاپ</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2026 سادات هایبرید ورکشاپ — همه حقوق محفوظ است.
+</footer>
+
+</body>
+</html>
